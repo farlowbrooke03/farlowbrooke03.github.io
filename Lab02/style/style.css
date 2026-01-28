@@ -1,0 +1,111 @@
+/*
+* {
+
+    outline: 1px solid brown
+}
+*/
+
+body {
+
+    background-color: antiquewhite
+}
+
+header {
+
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #ee7700;
+    font-size: 36pt;
+    text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+}
+
+header {
+
+    background-color: #ee7000; 
+    
+
+}
+
+nav {
+
+    background-color: #aa5500;
+    text-align: center;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+a{
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: peachpuff;
+    font-size: 36pt;
+}
+
+nav > a {
+
+    padding: 10px 20px;
+    margin: 0 10px
+}
+
+main {
+    
+    text-align: center;
+    padding: 0px 10vw;
+}
+
+h1 {
+
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color:#aa5500;
+    text-align: center;
+}
+
+p {
+
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #aa5500;
+    font-size: 24px;
+}
+
+header > h1 {
+
+    color: (235, 229, 141)
+    
+}
+
+footer {
+
+    background-color: #aa5500 ;
+    color: antiquewhite;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer > p {
+
+    color: #663300
+}
+
+/* Hey guys, please use the rest of this area for specific code */

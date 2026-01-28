@@ -1,0 +1,151 @@
+/* #ssn {
+    color: red;
+}
+#statusResult {
+    color: blue;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+
+} */
+
+body {
+
+font-size: 18pt;
+
+}
+
+.center {
+
+text-align: center;
+
+}
+
+.video {
+
+    margin-left: auto;
+}
+
+.blue {
+
+color: blue
+
+}
+
+.red {
+
+color: red;
+
+}
+
+.pink {
+
+color: pink;
+
+}
+
+.bold {
+
+    font-weight: bold
+
+}
+
+.italic {
+
+    font-style: italic
+
+}
+
+.orange {
+
+    color: orange
+
+}
+
+.white {
+
+    color: aqua
+
+}
+
+.green {
+
+    color: green
+
+}
+
+.moby {
+
+font-family: "moby", sans-serif;
+font-weight: 400;
+font-style: normal;
+    
+}
+
+.sutro {
+
+font-family: "sutro-open-fill", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.anton {
+
+font-family: "anton", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.nickel {
+font-family: "nickel", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.coco {
+
+font-family: "cofo-raffine", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+}
+
+.demo {
+
+font-family: "democratica", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+}
+
+.optima {
+
+font-family: "optima-lt-pro", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.lightshade {
+
+background-color:rgb(215, 215, 215)
+
+}
+
+.darkshade {
+
+}
+
+.shadedcolor {
+
+background-color: antiquewhite;
+
+}
+
+h1#pagetitle {
+
+    color: red;
+
+}
