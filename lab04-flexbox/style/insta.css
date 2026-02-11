@@ -1,6 +1,13 @@
-.root {
+:root {
 
-    font-size: 12px;
+    font-size: 10pt;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .post {
@@ -9,28 +16,76 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(210, 210, 210);
-    height: 676px;
+    background-color: rgb(200, 200, 200);
+    height: 560px;
     width: 382px;
+    padding: 10px;
     
 }
 
-.post div {
+.userbox {
 
-    background-color: rgb(210, 210, 210);
-    width: 300px;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 382px;
+    height: 60px;
+
+}
+
+.profilepic {
+
+    background-color: rgb(130, 130, 130);
+    height: 30px;
+    width: 30px;
     margin: 10px;
-    padding: 10px; 
-    font-size: 30px;
+}
+
+.username {
+
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 }
 
 .img {
 
     justify-content: center;
+    margin: 10px;
 }
 
-.caption {
+.icons {
 
-    font-size: 12pt;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%
+
+}
+
+.icons div {
+
+    width: 30px;
+    height: 30px;
+    background-color: rgb(130, 130, 130);
+    gap: 10px;
+    margin: 3px;
+
+}
+
+.icons div:last-child {
+
+    margin-left: auto;
+
+}
+
+.caption div {
+
+    margin: 3px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
