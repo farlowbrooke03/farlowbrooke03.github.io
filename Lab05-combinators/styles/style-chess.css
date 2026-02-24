@@ -1,0 +1,144 @@
+/* {
+
+    outline: 1px solid magenta;
+
+}
+*/
+#main-container {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#chessboard {
+
+    width: 90vw;
+    aspect-ratio: 1 / 1;
+    max-height: 90vh;
+    max-width: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+#chessboard > div {
+    
+    height: 11.1%;
+    display: flex;
+    flex-direction: row;
+    outline: 3px solid black
+    
+}
+
+#chessboard div div {
+
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50pt;
+    flex-grow: 1;
+    width: 11.1%;
+
+}
+
+#chessboard div:nth-of-type(even) div:nth-of-type(even) {
+
+    background-color: pink;
+}
+
+#chessboard div:nth-of-type(odd) div:nth-of-type(odd) {
+
+    background-color: pink;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(2) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(3) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(4) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(5) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(6) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(7) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(8) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(1) div:nth-of-type(9) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(2) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(3) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(4) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(5) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(6) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(7) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(8) div:nth-of-type(1) {
+
+    background-color: white;
+}
+
+#chessboard div:nth-of-type(9) div:nth-of-type(1) {
+
+    background-color: white;
+}

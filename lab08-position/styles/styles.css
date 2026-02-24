@@ -1,0 +1,89 @@
+* {
+
+    outline: 2px solid magenta;
+}
+
+:root {
+
+    font-size: 24pt;
+}
+
+main {
+
+    width: 60vw;
+    margin-top: 220px;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+}
+
+main div {
+
+    position: relative;
+    background-color: bisque;
+    min-height: 200px;
+}
+
+.theguy {
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    max-width: 100px;
+
+}
+
+.football {
+
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    max-width: 20px;
+}
+
+.chat {
+
+    position: fixed;
+    max-width: 100px;
+    max-height: 100px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+
+}
+
+header {
+
+    background-color: burlywood;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 80%;
+    z-index: 1;
+    
+}
+
+.brain {
+
+    width: 300px;
+    position: sticky;
+    top: 220px;
+    align-self: flex-start;
+    order: 2;
+
+}
+
+main > div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+main div:nth-of-type(1) div {
+
+    width: 57%;
+    order: 1;
+}
