@@ -18,5 +18,11 @@ h1 {
     font-weight: 700;
     font-style: normal;
     color: rgb(255, 153, 170);
+    font-size: 40pt;
     
+}
+
+.text{
+    text-align: left;
+    font-size: 20pt;
 }
