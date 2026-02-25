@@ -1,0 +1,130 @@
+main {
+    background-color: rgb(175, 150, 120);
+    width: 750px;
+    height: 1000px;
+    position: relative;
+}
+
+.one {
+    font-family: "sofia-pro-comp", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 900pt;
+    position: absolute;
+    left: 50px;
+    top: -400px;
+    color: rgb(40, 20, 0);
+
+}
+
+.O {
+    font-family: "impetus", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 120pt;
+    position: absolute;
+    left: 324px;
+    top: 498px;
+
+}
+
+.P {
+    
+    font-family: "baltica", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 300pt;
+    position: absolute;
+    right: 122px;
+    bottom: 200px;
+    transform: rotate(-45deg) scale(1);
+    color: rgb(40, 20, 0);
+}
+
+.r {
+    font-family: bodega-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(175, 150, 120);
+    position: absolute;
+    left: 460px;
+    top: 370px;
+    position: absolute;
+    transform: rotate(5deg);
+}
+
+.o {
+    font-family: bodega-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(175, 150, 120);
+    position: absolute;
+    left: 485px;
+    top: 380px;
+    position: absolute;
+    transform: rotate(25deg);
+}
+
+.u {
+    font-family: bodega-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(175, 150, 120);
+    position: absolute;
+    left: 510px;
+    top: 400px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.n {
+    font-family: bodega-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(175, 150, 120);
+    position: absolute;
+    left: 530px;
+    top: 430px;
+    position: absolute;
+    transform: rotate(65deg);
+}
+
+.El {
+    font-family: "golos-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50pt;
+    position: absolute;
+    left: 425px;
+    top: 200px;
+    color: rgb(40, 20, 0);
+}
+
+.Lissit {
+    font-family: "golos-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    color: rgb(40, 20, 0);
+    font-size: 15pt;
+    top: 270px;
+    left: 510px;
+    transform: rotate(30deg);
+}
+
+.kester {
+    font-family: "rockwell-nova-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    color: rgb(40, 20, 0);
+    font-size: 20pt;
+    top: 845px;
+    left: 330px
+
+}
