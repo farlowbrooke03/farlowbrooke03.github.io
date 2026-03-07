@@ -14,41 +14,73 @@ header, nav, main, footer {
 }
 
 header {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 120, 150);
     height: 200px;
     text-align: center;
     font-size: 50pt;
+    font-family: new-spirit, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 0, 102);
     padding-top: 76px;
+    
+}
+
+.roses img {
+    height: 300px;
+}
+
+.tulips img {
+    height: 300px;
+}
+
+.lilacs img {
+    height: 300px;
+}
+
+.gerberas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerberas img {
+    height: 350px;
+}
+
+aside p {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 nav {
-    background-color: rgb(0, 50, 255);
+    background-color: rgb(0, 150, 60);
     height: 100px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
 nav a {
-
+    color: white;
     display: inline-block;
     padding: .05rem;
     font-size: 1.2rem;
-    text-decoration: none wavy white 3px;
+    text-decoration: none wavy rgb(10, 100, 50) 3px;
 }
 
 nav a:link {
 
-    color: rgb(0, 0, 0);;
+    color: rgb(0, 0, 0);
 
 }
 
 nav a:hover {
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(10, 100, 50);
     transform: rotate(30deg) scale(1.5)
 }
 
@@ -61,26 +93,58 @@ main {
 }
 
 aside {
-    background-color: rgb(255, 242, 0);
+    background-color: rgb(150, 204, 255);
     width: 400px;
     padding: 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 125, 125);
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-family: "mundial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 article {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(250, 250, 100);
+    color: rgb(255, 125, 125);
     flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.flower-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: "mundial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "mundial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 20px;
+}
+
+.flower-container p {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 article:hover {
 
-    background-color: rgb(150, 100, 255);
+    background-color: rgb(175, 150, 255);
 }
 
 footer {
-    background-color: rgb(0, 50, 255);
+    background-color: white;
+    color: rgb(255, 120, 150);
     min-height: 300px;
+    text-align: center;
+    padding-top: 20px;
 }

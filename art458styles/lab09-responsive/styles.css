@@ -1,0 +1,131 @@
+:root {
+
+    font-size: clamp(18pt, 2vw, 24pt);
+    font-family: sans-serif;
+
+}
+
+body {
+
+    background-color: rgb(255, 200, 200);
+}
+
+h1 {
+
+    text-align: center;
+    color: rgb(255, 100, 100)
+
+}
+
+.sm {
+
+    display: contents;
+}
+
+.med {
+
+    display: none;
+}
+
+.lg {
+
+    display: none;
+}
+
+.xl {
+
+    display: none;
+}
+
+#card-container {
+
+    background-color: rgb(255, 100, 100);
+    padding: 20px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+    border-radius: 12px;
+
+}
+
+#card-container div {
+
+    padding: 20px;
+    height: 100px;
+    border: 3px solid white;
+    background-color: rgb(255, 235, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 10px 10px 0px 5px rgb(255, 160, 112);
+    background: #FF7E7E;
+    background: -moz-linear-gradient(top, #FF7E7E 0%, #FFFFFF 0%, #FF6060 100%);
+    background: -webkit-linear-gradient(top, #FF7E7E 0%, #FFFFFF 0%, #FF6060 100%);
+    background: linear-gradient(to bottom, #FF7E7E 0%, #FFFFFF 0%, #FF6060 100%);
+}
+
+/* Styles for iPad */
+@media screen and (min-width: 768px) {
+
+    .sm {
+
+        display: none;
+    }
+
+    .med {
+
+        display: contents;
+    }
+
+    body {
+
+        background-color: rgb(255, 234, 160);
+    }
+}
+
+/* Styles for laptop */
+@media screen and (min-width: 992px) {
+
+    h1 {
+
+        text-align: left;
+    }
+
+    .med {
+
+        display: none;
+    }
+
+    .lg {
+
+        display: contents;
+    }
+    
+    body {
+
+        background-color: rgb(132, 255, 150);
+    }
+}
+
+/* Styles for XL devices */
+
+@media screen and (min-width: 1200px) {
+
+    .lg {
+
+        display: none;
+    }
+
+    .xl {
+
+        display: contents;
+    }
+    
+    body {
+
+        background-color: rgb(100, 150, 255);
+    }
+}
