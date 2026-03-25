@@ -1,0 +1,8 @@
+.logo img,
+.branding img,
+.docs img,
+.mock img,
+.pin img {
+    max-height: 50%;
+    max-width: 50%;
+}

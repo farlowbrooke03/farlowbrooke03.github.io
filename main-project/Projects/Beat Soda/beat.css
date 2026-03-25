@@ -1,0 +1,15 @@
+h1 {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.mock img,
+.poster img,
+.can img,
+.ad img,
+.billboard img {
+
+    max-width: 50%;
+    max-height: 50%;
+}

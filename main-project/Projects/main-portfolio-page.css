@@ -1,0 +1,14 @@
+h1 {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.beat img,
+.autism img,
+.poster img,
+.prints img,
+.jewelry img {
+  max-width: 50%;
+  max-height: 50%;
+}

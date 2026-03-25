@@ -1,0 +1,30 @@
+main {
+
+    background-color: rgb(255, 150, 180);
+}
+
+img {
+    
+    height: 50%;
+    position: absolute;
+    left: 10px;
+    
+}
+
+h2 {
+
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    left: 300px;
+    color: rgb(255, 50, 50);
+
+}
+
+h3 {
+
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
