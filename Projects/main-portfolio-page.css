@@ -1,0 +1,32 @@
+h1 {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #af3232;
+
+}
+
+.beat img,
+.autism img,
+.posters img,
+.prints img,
+.jewelry img {
+    
+  max-height: 35vh;
+}
+
+body {
+
+  background-color: #f68787;
+  font-family: archivo-variable, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #af3232;
+}
+  
+.container {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

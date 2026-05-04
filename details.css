@@ -1,0 +1,370 @@
+.wavybg {
+
+    color: #FAE1C8;
+    position: absolute;
+    z-index: -1;
+    width: 115%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.logocontainer {
+
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #FAE1C8;
+
+}
+
+
+.logo {
+
+    padding: 20px;
+    max-width: 1200px;
+    min-width: 1200px;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.lefteye {
+
+    width: 195px;
+    height: 175px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 395px;
+    top: 131px;
+}
+
+.righteye {
+
+    width: 195px;
+    height: 175px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 622px;
+    top: 131px;
+}
+
+.leftpupil {
+
+    width: 75px;
+    height: 75px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    left: 420px;
+    top: 150px;
+
+}
+
+.rightpupil {
+
+    width: 75px;
+    height: 75px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    left: 645px;
+    top: 150px;
+
+}
+
+.name {
+
+    color: #D85555;
+    line-height: 250pt;
+    text-align: center;
+    font-size: 250pt;
+
+}
+
+.labs {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28pt;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+    color: #D85555;
+}
+
+.labs a {
+
+    text-decoration: none;
+}
+
+/*Portfolio details*/
+
+nav {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "wght" 400;
+    font-size: 28pt;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+    background-color: #FAE1C8;
+    max-width: fit-content;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px 0px 0px 15px;
+}
+
+nav a {
+    
+    color: #af3232;
+    text-decoration: none;
+}
+
+.autismgrid img,
+.beatgrid img,
+.postergrid img,
+.printgrid img {
+
+    height: 60%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.autismframe,
+.beatframe,
+.posterframe,
+.printframe {
+
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismframe img,
+.beatframe img,
+.posterframe img,
+.printframe img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismframe .heading,
+.beatframe .heading,
+.posterframe .heading,
+.printframe .heading {
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.infinity,
+.strawposter,
+.clarendon,
+.fascist {
+
+    width: 60%;
+    height: 60%;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.infinity img,
+.strawposter img,
+.clarendon img,
+.fascist img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description .infinity img
+.description .strawposter img,
+.description .clarendon img,
+.description .fascist img{
+
+    min-height: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+body {
+    
+    font-family: rl-aqva, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 28pt;
+    background-color: #F68787;
+
+}
+
+.heading {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #af3232;
+    font-size: 64pt;
+}
+
+h1 {
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+p {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "wght" 400;
+    font-size: 20pt;
+}
+
+.autismgrid,
+.beatgrid,
+.postergrid {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Portfolio details* end/*
+
+/*Contact page*/
+.contacts {
+    font-family: massilia, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    color: #af3232;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 15rem;
+}
+
+.contacts > *:not(.wavyframe) {
+    position: relative;
+    z-index: 1;
+}
+
+.contacts h1 {
+    font-family: rl-aqva, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #af3232;
+    font-size: 64pt;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contacts p {
+    font-size: 28pt;
+    margin: 0.4rem 0;
+}
+
+.social-item {
+    font-family: massilia, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ion-icon {
+    font-size: 46px;
+    color: #af3232;
+}
+
+.wavyframe {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 120%;
+    max-width: 1400px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wavyframe img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.email p:first-child {
+    font-weight: 700;
+}
+
+.phone p:first-child {
+    font-weight: 700;
+}
+
+.socials p {
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.socials p:first-child {
+    font-weight: 700;
+}
+
+/* Styles for mobile */
+
+@media screen and (max-width: 375px) {
+
+
+}
