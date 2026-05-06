@@ -12,12 +12,14 @@
 
     <nav>
      
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="main-portfolio-page.html">Portfolio</a>
         <a href="bio.html">About</a>
         <a href="contact.html">Contact</a>
 
     </nav>
+
+<div class="webpage">
 
     <div class="logocontainer">
 
@@ -27,19 +29,18 @@
 
             <img class="wavybg" src="../MEDIA/Union.svg">
 
-            <div class="lefteye"></div>
-            <div class="righteye"></div>
-            <div class="leftpupil"></div>
-            <div class="rightpupil"></div>
+                <div class="lefteye">
+                    <div class="leftpupil"></div>
+                </div>
+
+                <div class="righteye">
+                    <div class="rightpupil"></div>
+                </div>
 
             <div class="name">Brooke Farlow</div>
             </div>
 
-        
-
     </div>
-
-
 
     <div class="labs">
         <p><a href="Lab01/index.html">Pancake Recipe</a></p>
@@ -55,6 +56,34 @@
         <p><a href="lab11-animation/index.html">Animation</a></p>
         <p><a href="lab12-responsive/index.html">Class Website</a></p>
     </div>
+
+<script>
+    const eyes = document.querySelectorAll(".lefteye, .righteye");
+
+    document.addEventListener("mousemove", function(event) {
+        if (window.innerWidth <= 768) return;
+
+        eyes.forEach(function(eye) {
+            const pupil = eye.querySelector(".leftpupil, .rightpupil");
+            const eyeRect = eye.getBoundingClientRect();
+
+            const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+            const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+
+            const mouseX = event.clientX - eyeCenterX;
+            const mouseY = event.clientY - eyeCenterY;
+
+            const angle = Math.atan2(mouseY, mouseX);
+
+            const maxMove = 50;
+
+            const pupilX = Math.cos(angle) * maxMove;
+            const pupilY = Math.sin(angle) * maxMove;
+
+            pupil.style.transform = `translate(${pupilX - 8}px, ${pupilY - 11}px)`;
+        });
+    });
+    </script>
 
 </body>
 

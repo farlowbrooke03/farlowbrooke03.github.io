@@ -12,30 +12,35 @@
 
 .logocontainer {
 
+    display: flex;
     position: relative;
     top: 100px;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: #FAE1C8;
-
+    margin: 0 auto;
 }
 
 
 .logo {
 
+
     padding: 20px;
+    width: 100%;
     max-width: 1200px;
     min-width: 1200px;
     align-items: center;
     position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    transform: scale(0.7);
+    transform-origin: top center;
 
 }
 
-
 .lefteye {
-
     width: 195px;
     height: 175px;
     background-color: #ffffff;
@@ -46,7 +51,6 @@
 }
 
 .righteye {
-
     width: 195px;
     height: 175px;
     background-color: #ffffff;
@@ -56,28 +60,16 @@
     top: 131px;
 }
 
-.leftpupil {
-
-    width: 75px;
-    height: 75px;
-    background-color: #000000;
-    border-radius: 50%;
-    position: absolute;
-    left: 420px;
-    top: 150px;
-
-}
-
+.leftpupil,
 .rightpupil {
-
     width: 75px;
     height: 75px;
     background-color: #000000;
     border-radius: 50%;
     position: absolute;
-    left: 645px;
-    top: 150px;
-
+    left: 35%;
+    top: 35%;
+    transform: translate(-50%, -50%);
 }
 
 .name {
@@ -89,6 +81,11 @@
 
 }
 
+.webpage {
+
+    margin-top: 120px;
+}
+
 .labs {
 
     font-family: "massilia", sans-serif;
@@ -96,7 +93,6 @@
     font-style: normal;
     font-size: 28pt;
     position: absolute;
-    margin-top: 150px;
     margin-left: 50px;
     color: #D85555;
 }
@@ -104,7 +100,90 @@
 .labs a {
 
     text-decoration: none;
+    color: white;
 }
+
+/*Portfolio*/
+
+.portfoliotitle {
+
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #af3232;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.container {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #af3232;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+.posters,
+.beat,
+.autism,
+.prints,
+.jewelry {
+
+    padding: 1 10px;
+    margin: 0;
+    width: 75%;
+}
+
+.posters {
+    
+    grid-column: 1;
+}
+.beat { 
+    
+    grid-column: 2;
+}
+.autism  {
+
+    grid-column: 3;
+}
+
+.prints,
+.jewelry {
+    flex: 0 0 auto;
+}
+
+.bottom-row {
+    
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 10px;
+}
+
+.caption {
+
+    text-align: center;
+}
+
+
+
+/*Portfolio ends*/
+
+
 
 /*Portfolio details*/
 
@@ -126,6 +205,11 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 0px 0px 0px 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 nav a {
@@ -137,7 +221,8 @@ nav a {
 .autismgrid img,
 .beatgrid img,
 .postergrid img,
-.printgrid img {
+.printgrid img,
+.jewelrygrid img {
 
     height: 60%;
     width: 60%;
@@ -149,7 +234,8 @@ nav a {
 .autismframe,
 .beatframe,
 .posterframe,
-.printframe {
+.printframe,
+.jewelryframe {
 
     position: relative;
     width: 100%;
@@ -160,7 +246,8 @@ nav a {
 .autismframe img,
 .beatframe img,
 .posterframe img,
-.printframe img {
+.printframe img,
+.jewelryframe img {
     width: 100%;
     height: auto;
     display: block;
@@ -171,7 +258,8 @@ nav a {
 .autismframe .heading,
 .beatframe .heading,
 .posterframe .heading,
-.printframe .heading {
+.printframe .heading,
+.jewelryframe .heading {
 
     position: absolute;
     inset: 0;
@@ -181,10 +269,15 @@ nav a {
     pointer-events: none;
 }
 
+.jewelryframe .heading {
+    font-size: 7vw;
+}
+
 .infinity,
 .strawposter,
 .clarendon,
-.fascist {
+.fascist,
+.strawberry {
 
     width: 60%;
     height: 60%;
@@ -195,17 +288,19 @@ nav a {
 .infinity img,
 .strawposter img,
 .clarendon img,
-.fascist img {
+.fascist img,
+.strawberry img {
 
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.description .infinity img
+.description .infinity img,
 .description .strawposter img,
 .description .clarendon img,
-.description .fascist img{
+.description .fascist img
+.description .strawberry img {
 
     min-height: 50%;
     width: 100%;
@@ -227,7 +322,7 @@ body {
     font-weight: 900;
     font-style: normal;
     color: #ffffff;
-    font-size: 28pt;
+    font-size: 10pt;
     background-color: #F68787;
 
 }
@@ -239,7 +334,7 @@ body {
     justify-content: center;
     width: 100%;
     color: #af3232;
-    font-size: 64pt;
+    font-size: 10vw;
 }
 
 h1 {
@@ -262,7 +357,9 @@ p {
 
 .autismgrid,
 .beatgrid,
-.postergrid {
+.postergrid,
+.printgrid,
+.jewelrygrid {
 
     display: grid;
     grid-template-columns: auto auto;
@@ -273,23 +370,170 @@ p {
 
 }
 
-/*Portfolio details* end/*
+/*Portfolio details end/*
+
+/*About page*/
+
+html {
+
+    background-color: #f68787;
+}
+
+nav {
+
+    font-family: archivo-variable, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "wght" 400;
+    font-size: 28pt;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+    background-color: #FAE1C8;
+    max-width: fit-content;
+    float: right;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border-radius: 0px 0px 0px 15px;
+    
+}
+
+nav a {
+
+    color: #af3232;
+    text-decoration: none;
+    
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+   
+    background-color: #f68787;
+    padding-top: 150px;
+   
+    position: relative;
+    z-index: 0;
+
+}
+
+.bio {
+
+    grid-column: 2;
+    grid-row: 1;
+
+    max-width: 1750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+
+
+
+.bio > div:Nth-of-type(2) { 
+    
+    background-color: #f68787;
+}
+
+h2 {
+
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #af3232;
+    font-size: 84pt;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bio-image {
+    position: relative;
+    width: clamp(200px, 30vw, 450px);
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.wavyframebio {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    
+
+}
+
+h3 {
+
+    font-family: archivo-variable, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24pt;
+    color: #ffffff;
+    background-color: #f68787;
+}
+
+.words h2 {
+    margin-bottom: 10px;
+}
+
+.words h3 {
+
+    min-width: 650px;
+    font-family: "massilia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body.bio-page main {
+
+    padding-top: 50px;
+}
+
+
+/*About page end*/
 
 /*Contact page*/
+
 .contacts {
     font-family: massilia, sans-serif;
     font-weight: 700;
     font-style: normal;
     position: relative;
     color: #af3232;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
+    margin-top: 100px;
     padding: 4rem 1.5rem 15rem;
+    isolation: isolate;
 }
 
-.contacts > *:not(.wavyframe) {
+.contact-content {
+
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .contacts h1 {
@@ -323,14 +567,14 @@ p {
 }
 
 ion-icon {
-    font-size: 46px;
+    font-size: 20px;
     color: #af3232;
 }
 
-.wavyframe {
+.wavyframecontact {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    top: 20px;
     transform: translateX(-50%);
     width: 120%;
     max-width: 1400px;
@@ -364,7 +608,462 @@ ion-icon {
 
 /* Styles for mobile */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) 
 
+/*Home*/
+
+{
+
+nav {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "wght" 400;
+    font-size: clamp(15px, 5vw, 30pt);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: row;
+    gap: clamp(22px, 8vw, 60px);
+    background-color: #FAE1C8;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 768px;
+    z-index: 2;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+nav a {
+    
+    color: #af3232;
+    text-decoration: none;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.logocontainer {
+
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #FAE1C8;
+    margin: 0 auto;
+}
+
+.logo {
+    width: fit-content;
+    max-width: none;
+    min-width: 0;
+    position: relative;
+    padding: 0.08em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 20vw;
+}
+
+.name {
+    font-size: 1em;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+} 
+
+.lefteye,
+.righteye {
+    position: absolute;
+    width: 0.585em;
+    height: 0.525em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 0.41em;
+}
+
+.lefteye {
+    left: 57.4%;
+    transform: translateX(-1.03em);
+}
+
+.righteye {
+    left: 57.4%;
+    transform: translateX(-0.345em)
+}
+
+.leftpupil,
+.rightpupil {
+    position: absolute;
+    width: 0.225em;
+    height: 0.225em;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 35%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.labs {
+
+    margin-top: 50px;
+}
+
+/*Home mobile end*/
+
+/*Portfolio mobile*/
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .container > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .posters,
+    .beat,
+    .autism,
+    .prints,
+    .jewelry {
+        grid-column: auto;
+    }
+
+    .bottom-row {
+        grid-column: auto;
+        flex-direction: column;
+    }
+
+/*Portfolio mobile end*/
+
+/*Portfolio details mobile*/
+
+.autismgrid img,
+.beatgrid img,
+.postergrid img,
+.printgrid img,
+.jewelrygrid img {
+
+    height: auto;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 
 }
+
+.autismframe,
+.beatframe,
+.posterframe,
+.printframe,
+.jewelryframe {
+
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismframe img,
+.beatframe img,
+.posterframe img,
+.printframe img,
+.jewelryframe img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismframe .heading,
+.beatframe .heading,
+.posterframe .heading,
+.printframe .heading,
+.jewelryframe .heading {
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.infinity,
+.strawposter,
+.clarendon,
+.fascist,
+.strawberry {
+
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center;
+}
+
+.infinity img,
+.strawposter img,
+.clarendon img,
+.fascist img,
+.strawberry img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description .infinity img,
+.description .strawposter img,
+.description .clarendon img,
+.description .fascist img,
+.description .strawberry img {
+
+    min-height: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+body {
+    
+    font-family: rl-aqva, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 28pt;
+    background-color: #F68787;
+
+}
+
+.heading {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #af3232;
+    font-size: 10vw;
+}
+
+h1 {
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.jewelryframe .heading {
+    font-size: 7vw;
+}
+
+p {
+
+    font-family: "massilia", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "wght" 400;
+    font-size: 4vw;
+}
+
+.autismgrid,
+.beatgrid,
+.postergrid,
+.printgrid,
+.jewelrygrid {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Portfolio details mobile end*/
+
+/*About mobile*/
+
+.bio {
+     grid-column: 2;
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 3vw;
+     justify-items: center;
+     margin-top: 100px;
+ }
+
+.bio-image {
+     justify-self: center;
+     margin: 0 auto;
+     width: clamp(250px, 40vw, 450px);
+     max-width: 350px;
+     position: relative;
+     z-index: 1;
+ }
+
+ h2 {
+    font-size: 12vw;
+ }
+
+ .words {
+     text-align: center;
+     margin-top: 56px;
+}
+
+ .words h3 {
+     min-width: 0;
+     width: 90vw;
+     font-size: 4vw;
+}
+
+body.bio-page .words h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+body.bio-page .words h3 {
+    margin: 10px;
+    padding: 0;
+    line-height: 1.2;
+    min-width: 0;
+}
+
+/*About mobile end*/
+
+/*Contact mobile */
+
+.wavyframecontact {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%) rotate(90deg);
+    width: 120%;
+    max-width: 900px;
+    min-width: 360px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wavyframe img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contacts {
+    font-family: massilia, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    color: #af3232;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 4rem 1.5rem 15rem;
+    isolation: isolate;
+}
+
+.contact-content {
+
+    position: relative;
+    z-index: 2;
+    font-size: 4.5vw;
+}
+
+.contacts h1 {
+    font-family: rl-aqva, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #af3232;
+    font-size: 9vw;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    transform: translateX(90px) translateY(25px);
+}
+
+.contacts p {
+    font-size: 4.5vw;
+    margin: 0.4rem 0;
+}
+
+.social-item {
+    font-family: massilia, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ion-icon {
+    font-size: 20px;
+    color: #af3232;
+}
+
+.email p:first-child {
+    font-weight: 700;
+    font-size: 6vw;
+}
+
+.phone p:first-child {
+    font-weight: 700;
+    font-size: 6vw;
+}
+
+.socials p {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.socials p:first-child {
+    font-weight: 700;
+    font-size: 6vw;
+}
+
+/*Contact mobile end*/
+
+}
+
+
+
+
